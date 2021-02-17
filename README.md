@@ -115,3 +115,21 @@ $ curl --header \
         --header "Content-Type: application/json" \
         http://localhost:3189/users
 ```
+
+### Archive Users
+##### (GET 'users/archive/:id')
+```bash
+$ curl --header \
+        "Authentication: Bearer JWT_TOKEN" \
+        --header "Content-Type: application/json" \
+         http://localhost:3189/users/archive/:id
+```
+### Unarchive Users
+##### (GET 'users/unarchive/:id')
+
+```bash
+$ curl --header \
+        "Authentication: Bearer JWT_TOKEN" \
+        --header "Content-Type: application/json" \
+         http://localhost:3189/users/unarchive/:id
+```
