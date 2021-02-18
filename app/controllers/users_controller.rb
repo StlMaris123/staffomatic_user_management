@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   before_action :set_paper_trail_whodunnit
 
   def index
-    render jsonapi: User.all
+    @users = User.all
+    render jsonapi: @users
   end
 
   def archive
